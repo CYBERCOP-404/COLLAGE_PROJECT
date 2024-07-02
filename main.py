@@ -54,6 +54,11 @@ while True:
     # --------------------------[MATH 4]--------------------------- #
     elif USER==4:
         print('KOTHA KAN A JAI NAH ? UPDATE DIBO TAR POR A DAKTA PABA . NOW USE 1-3 ')
+    else:
+        sleep(4)
+        url ='https://sites.google.com/view/jpicst2324/home'
+        auto.open_new_tab(url)
+        os.system(f'xdg-open {url}')        
     # --------------------------[FOOTER]--------------------------- #
     sleep(4)
     url ='https://sites.google.com/view/jpicst2324/home'
