@@ -2,6 +2,6 @@
 ✅😈 NOTHING IS IMPOSIBLE 😈✅
 
 ```
-ITS ME NIRJON BRO
+ITS ME NAHID BRO
 WATE FOR ENDING .....
 ```
