@@ -29,15 +29,15 @@ while True:
     os.system('clear')
     print(BANNER)
     print(COMMAND)
-    USER = int(input('  [🙅] WHAT IS YOUR CHOICE : '))
+    USER =input('  [🙅] WHAT IS YOUR CHOICE : ')
     # --------------------------[MATH 1]--------------------------- #
-    if USER==1:
+    if USER=='1':
         num1=int(input('  [+] ENTER YOUR FIRST NUMBER : '))
         num2=int(input('  [+] ENTER YOUR SECOND NUMBER : '))
         Sum =num1+num2
         print(f'  [🎯] Your math answer is \033[0;33m{Sum}\033[0;30m ')
     # --------------------------[MATH 2]--------------------------- #
-    elif USER==2:
+    elif USER=='2':
         num1=int(input('  [+] ENTER YOUR 1st NUMBER : '))
         num2=int(input('  [+] ENTER YOUR 2nd NUMBER : '))
         num3=int(input('  [+] ENTER YOUR 3rd NUMBER : '))
@@ -46,13 +46,13 @@ while True:
         SUM=num1+num2+num3+num4+num5
         print(f'  [🎯] Your math answer is \033[0;33m{SUM}\033[0;30m ')
     # --------------------------[MATH 3]--------------------------- #
-    elif USER==3:
+    elif USER=='3':
         num1=int(input('  [+] ENTER YOUR FIRST NUMBER : '))
         num2=int(input('  [+] ENTER YOUR SECOND NUMBER : '))
         Sum =0.5*num1*num2
         print(f'  [🎯] Your math answer is \033[0;33m{Sum}\033[0;30m ')
     # --------------------------[MATH 4]--------------------------- #
-    elif USER==4:
+    elif USER=='4':
         print('KOTHA KAN A JAI NAH ? UPDATE DIBO TAR POR A DAKTA PABA . NOW USE 1-3 ')
     else:
         sleep(4)
