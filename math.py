@@ -35,6 +35,7 @@ COMMAND='''
 # ----------------------------------------------[ URL ]------------------------------------------------------------- #
 url='https://sites.google.com/view/jpicst2324/home'
 # --------------------------------------[ MAIN SECTION HERE ]------------------------------------------------------- #
+os.system('clear')
 user=input('WHAT IS YOUR DEVICE ? (PHONE/PC/LAPTOP) :~ ')
 USERX=user.upper()
 if USERX in ['PC', 'LAPTOP']:
