@@ -76,4 +76,5 @@ if USERX=='PHONE':
             os.system(f'xdg-open {url}')
 else:
     print('YOU ARE A ALIEN YOU NEED TO DOCTOR COLL ME I AM A DOCTOR ')
+sleep(5)
 # --------------------------------------[ EXIT DEVELOPER NAHID ]------------------------------------------------------- #
