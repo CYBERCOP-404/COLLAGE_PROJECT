@@ -31,7 +31,7 @@ while True:
     elif user==2:
         os.system('python mait.py')
     elif user==3:
-        os.system('python math.py')
+        os.system('python simple_math.py')
     else:
         for i in range(10,0,-1):
             sleep(0.5)
