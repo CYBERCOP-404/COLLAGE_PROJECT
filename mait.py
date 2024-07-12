@@ -64,4 +64,5 @@ while True:
     url ='https://sites.google.com/view/jpicst2324/home'
     auto.open_new_tab(url)
     os.system(f'xdg-open {url}')
+sleep(5)
     # --------------------------[END]--------------------------- #
