@@ -22,16 +22,24 @@ COMMAND='''
 [4] USE RANDOM PROGRAM
 [+] WATE FOR UPDATE
 '''
+PROGRAM1='python calculator.py'
+PROGRAM2='python mait.py'
+PROGRAM3='python math.py'
+OK_LIST=[PROGRAM1,PROGRAM2,PROGRAM3]
 # --------------------------------------[ MAIN BODY ]------------------------------------------------------- #
 while True:
+    os.system('clear')
     print(BANNER,COMMAND)
     user=int(input('[+] ENTER YOUR CHOICE :~ '))
     if user==1:
-        os.system('python calculator.py')
+        os.system(PROGRAM1)
     elif user==2:
-        os.system('python mait.py')
+        os.system(PROGRAM2)
     elif user==3:
-        os.system('python simple_math.py')
+        os.system(PROGRAM3)
+    elif user==4:
+        out=choice(OK_LIST)
+        os.system(out)
     else:
         for i in range(10,0,-1):
             sleep(0.5)
