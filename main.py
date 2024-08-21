@@ -31,13 +31,15 @@ COMMAND='''
 [1] USE VIP CALCULATOR
 [2] USE THIS JPI MATH
 [3] USE CALCULATOR NORMAL PROGRAM
-[4] USE RANDOM PROGRAM
+[4] USE COLLAGE BOOK PROGRAM
+[5] USE RANDOM PROGRAM
 [+] WATE FOR UPDATE
 '''
 PROGRAM1='python calculator.py'
 PROGRAM2='python mait.py'
 PROGRAM3='python math.py'
-OK_LIST=[PROGRAM1,PROGRAM2,PROGRAM3]
+PROGRAM4='python book.py'
+OK_LIST=[PROGRAM1,PROGRAM2,PROGRAM3,PROGRAM4]
 # --------------------------------------[ MAIN BODY ]------------------------------------------------------- #
 while True:
     clear()
@@ -52,6 +54,8 @@ while True:
     elif user==3:
         os.system(PROGRAM3)
     elif user==4:
+        os.system(PROGRAM4)
+    elif user==5:
         out=choice(OK_LIST)
         os.system(out)
     else:
