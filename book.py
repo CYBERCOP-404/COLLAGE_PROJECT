@@ -6,6 +6,7 @@ from random import choice
 from sys import *
 import os
 import webbrowser as auto
+from math import *
 # --------------------------------------[ CLEAR SCKIN PROGRAM ]------------------------------------------------------------- #
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -31,15 +32,18 @@ BANNER='''\033[0;32m
  -----------------------------------------------------        
 '''
 COMMAND='''
-[1]  USE PROGRAM 1
-[2]  USE PROGRAM 2
-[3]  USE PROGRAM 3
-[4]  USE PROGRAM 4
-[5]  USE PROGRAM 5
-[6]  USE PROGRAM 6
-[7]  USE PROGRAM 7
-[8]  USE PROGRAM 8
-[+] JOIN OUR GROUP 
+[1]   USE PROGRAM 1
+[2]   USE PROGRAM 2
+[3]   USE PROGRAM 3
+[4]   USE PROGRAM 4
+[5]   USE PROGRAM 5
+[6]   USE PROGRAM 6
+[7]   USE PROGRAM 7
+[8]   USE PROGRAM 8  (This is calculator .)
+[9]   USE PROGRAM 9
+[10]  USE PROGRAM 10
+[11]  USE PROGRAM 11
+[+]   JOIN OUR GROUP 
 '''
 # --------------------------------------[ EXTRA CODE HERE ]--------------------------------------------------------- #
 url='https://www.github.com/cybercop-404'
@@ -220,6 +224,70 @@ while True:
         else:
             os.system(f'xdg-open {url}')
             auto.open_new(url)
+    # -----------------------------[PROGRAM 9] ------------------------------- #
+    elif choice=='9':
+        for i in range(3):
+            A=int(input('VAL A :~ '))
+            B=int(input('VAL B :~ '))
+            C=int(input('VAL C :~ '))
+            if (A+B)>C and (B+C)>A and (C+A)>B:
+                S=(A+B+C)/2
+                AREA=sqrt(S*(S-A)*(S-B)*(S-C))
+                print(AREA)
+            else:
+                print('TRIANGLE NOT POSSIBLE ')
+        print('\033[0;31mYOUR TOKEN IS OVER .\t ENTER 0 TO CLOSE PROGRAM .')
+        publisity = input(' > ')
+        if publisity=="0":
+            breakpoint
+        else:
+            os.system(f'xdg-open {url}')
+            auto.open_new(url)
+    # -----------------------------[PROGRAM 10] ------------------------------- #   
+    elif choice=='10':
+        for i in range(3):
+            A=int(input('VAL A :~ '))
+            B=int(input('VAL B :~ '))
+            C=int(input('VAL C :~ '))
+            dis=(B**2)-(4*A*C)
+            if (dis>0):
+                root1=(-B+sqrt(dis)/(2*A))
+                root2=(-B -sqrt(dis)/(2*A))
+                print('Two distinct real roots are %.2f and %.2f'%(root1,root2))
+            elif (dis==0):
+                root1=root2=-B/(2*A)
+                print('Two equal and real roots are %.2f and %.2f'%(root1,root2))
+            elif(dis<0):
+                root1=root2=-B/(2*A)
+                imaginary =sqrt(-dis)/(2*A)
+                print('Two distinct complex roots are %.2f+%.2f and %.2f-%.2f'%(root1,imaginary,root2,imaginary))
+        print('\033[0;31mYOUR TOKEN IS OVER .\t ENTER 0 TO CLOSE PROGRAM .')
+        publisity = input(' > ')
+        if publisity=="0":
+            breakpoint
+        else:
+            os.system(f'xdg-open {url}')
+            auto.open_new(url)
+    # -----------------------------[PROGRAM 11] ------------------------------- # 
+    elif choice=='11':
+        for i in range(3):
+            NUM1=int(input('ENTER YOUR NUMBER 1 :~ '))
+            NUM2=int(input('ENTER YOUR NUMBER 2 :~ '))
+            NUM3=int(input('ENTER YOUR NUMBER 3 :~ '))
+            if NUM1>NUM2 and NUM1>NUM3:
+                print(f'Your large number is {NUM1} .')
+            elif NUM2>NUM1 and NUM2>NUM3:
+                print(f'Your large number is {NUM2} .')
+            elif NUM3>NUM1 and NUM3>NUM2:
+                print(f'Your large number is {NUM3} .')
+        print('\033[0;31mYOUR TOKEN IS OVER .\t ENTER 0 TO CLOSE PROGRAM .')
+        publisity = input(' > ')
+        if publisity=="0":
+            breakpoint
+        else:
+            os.system(f'xdg-open {url}')
+            auto.open_new(url)
+    # -----------------------------[Footer] ------------------------------- # 
     else:
         os.system(f'xdg-open {url}')
         auto.open_new(url)
